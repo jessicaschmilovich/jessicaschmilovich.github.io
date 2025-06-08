@@ -323,33 +323,24 @@
   </footer>
 
   <script>
-    const nameText = "Jessica Schmilovich";
-    const speed = 100;
-    const pause = 2000;
-    let idx = 0, forward = true;
-    const target = document.getElementById("typewriter-name");
-
-    function typeName() {
-      if (forward) {
+    document.addEventListener("DOMContentLoaded", () => {
+      const nameText = "Jessica Schmilovich";
+      const speed    = 110;
+      let idx        = 0;
+      const target   = document.getElementById("typewriter-name");
+      const cursor   = document.querySelector(".cursor");
+  
+      function typeName() {
         if (idx < nameText.length) {
-          target.textContent += nameText.charAt(idx++);
+          target.textContent += nameText[idx++];
           setTimeout(typeName, speed);
         } else {
-          forward = false;
-          setTimeout(typeName, pause);
-        }
-      } else {
-        if (idx > 0) {
-          target.textContent = nameText.substring(0, --idx);
-          setTimeout(typeName, speed / 2);
-        } else {
-          forward = true;
-          setTimeout(typeName, speed);
+          cursor.remove();
         }
       }
-    }
-
-    document.addEventListener("DOMContentLoaded", typeName);
+  
+      typeName();
+    });
   </script>
 </body>
 </html>
