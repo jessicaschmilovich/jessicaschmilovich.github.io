@@ -120,11 +120,6 @@ h1, h2, h3 {
   margin-top: 0.5rem;
 }
 
-@keyframes blink {
-  0%, 50%   { opacity: 1; }
-  51%, 100% { opacity: 0; }
-}
-
 .section-header {
   background: var(--pink-bright);
   padding: 0.6rem 1.2rem;
