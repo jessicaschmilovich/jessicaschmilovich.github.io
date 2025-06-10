@@ -120,13 +120,6 @@ h1, h2, h3 {
   margin-top: 0.5rem;
 }
 
-/* Typewriter cursor */
-.cursor {
-  display: inline-block;
-  animation: blink 1s infinite;
-  color: var(--pink-bright);
-}
-
 @keyframes blink {
   0%, 50%   { opacity: 1; }
   51%, 100% { opacity: 0; }
