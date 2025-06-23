@@ -204,7 +204,7 @@ h1, h2, h3 {
   padding: 0;
 }
 
-.awards-list li {
+.awards-list {
   background: var(--card-bg);
   border-left: 4px solid var(--pink-bright);
   padding: 0.8rem 1rem;
