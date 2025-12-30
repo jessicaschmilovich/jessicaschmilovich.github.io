@@ -87,7 +87,7 @@ h1, h2, h3 {
 
 .section {
   max-width: 1500px;
-  margin: 1.5rem auto;
+  margin: 1rem auto;
   padding: 1rem 2rem;
   scroll-margin-top: 90px;
 }
@@ -105,19 +105,14 @@ h1, h2, h3 {
 
 .section-main {
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .main-name {
   font-size: 4rem;
   color: var(--pink-bright);
   margin-bottom: 0.2rem;
-}
-
-.main-subtitle {
-  font-size: 1.5rem;
-  color: var(--text-dark);
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .section-header {
@@ -273,9 +268,6 @@ h1, h2, h3 {
   .main-name {
     font-size: 3.2rem;
   }
-  .main-subtitle {
-    font-size: 1.1rem;
-  }
   .nav-links a {
     font-size: 1rem;
   }
@@ -300,9 +292,6 @@ h1, h2, h3 {
 @media screen and (max-width: 500px) {
   .main-name {
     font-size: 2.6rem;
-  }
-  .main-subtitle {
-    font-size: 1rem;
   }
   .navbar {
     padding: 0.8rem 1.5rem;
